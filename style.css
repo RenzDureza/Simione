@@ -1,0 +1,344 @@
+:root {
+    --bg: #CAC3C3;
+    --fg: #ffffff;
+    --dark_gray: #8D8888;
+}
+
+body {
+    font-family: Inter;
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Kaisei Tokumin";
+    font-size: 64px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: -2.28px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+regis {
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.regis input {
+    width: 400px;
+    height: 20px;
+    border-radius: 8px;
+    border: none;
+    padding: 8px;
+    margin: 8px;
+}
+
+.regis button {
+    width: 415px;
+    height: 35px;
+    border-radius: 8px;
+    border: 1px solid black;
+    padding: 8px;
+    margin: 8px;
+    background-color: #9d9b9b;
+}
+
+.regis button:hover {
+    background-color: var(--dark_gray);
+    color: var(--fg);
+}
+
+hr.solid {
+    border: 1px solid var(--fg);
+    width: 400px;
+}
+
+/* View Task CSS */
+
+.task-card {
+    background-color: var(--fg);
+    font-family: "Kaisei Takumin";
+    display: flex;
+    flex-direction: column;
+    width: 490px;
+    height: 450px;
+    border-radius: 10px;
+    padding: 20px 15px;
+
+}
+
+.task-card h3 {
+    margin: 5px;
+}
+
+.task-card hr {
+    margin: -3px 5px 5px 5px;
+}
+
+.task-list {
+    font-size: 17px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 10px 15px 15px 15px;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.task-form {
+    display: flex;
+    align-items: center;
+}
+
+.task-form input[type="checkbox"] {
+    transform: scale(1.2);
+    margin-right: 4px;
+}
+
+.task-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    gap: 10px;
+}
+
+.task-title {
+    flex-grow: 1;
+    font-size: 17px;
+    margin: 5px;
+}
+
+.due-date {
+    font-size: 17px;
+    font-weight: 600;
+    min-width: 60px;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    color: #fa4437;
+    height: 23px;
+    padding: 0;
+}
+
+.task-done {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.6;
+}
+
+.bottom-buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.bottom-buttons button {
+    font-family: "Kaisei Takumi";
+    font-size: 20px;
+    width: 255px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--fg);
+}
+
+.bottom-buttons button:hover {
+    background-color: var(--dark_gray);
+    color: var(--fg);
+}
+
+
+
+/* Add Task */
+
+.add_task_card {
+    background-color: var(--fg);
+    font-family: "Kaisei Takumin";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 490px;
+    height: 225px;
+    border-radius: 10px;
+    padding: 20px 15px;
+}
+
+.add_task_card h3 {
+    margin: 5px;
+}
+
+.add_task_card hr.solid {
+    border-top: 3px solid var(--dark_gray);
+}
+
+.add_task {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.add_task {
+    font-family: "Kaisei Takumin";
+}
+
+.add_task .top_input input {
+    background-color: var(--bg);
+    width: 430px;
+    height: 20px;
+    border-radius: 8px;
+    border: none;
+    padding: 8px;
+    margin: 8px
+}
+
+.add_task .middle_input {
+    display: flex;
+    flex-direction: row;
+}
+
+.add_task .middle_input input {
+    background-color: var(--bg);
+    width: 200px;
+    height: 20px;
+    border-radius: 8px;
+    border: none;
+    padding: 8px;
+    margin: 8px
+}
+
+.add_task .bottom_input {
+    display: flex;
+    flex-direction: column;
+}
+
+.add_task button {
+    background-color: var(--bg);
+    width: 449px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    padding: 8px;
+    margin: 8px;
+}
+
+.add_task button:hover {
+    background-color: var(--dark_gray);
+    color: var(--fg);
+}
+
+.back_btn button {
+    font-family: "Kaisei Takumin";
+    font-size: 20px;
+    width: 520px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--fg);
+    margin-top: 10px;
+}
+
+.back_btn button:hover {
+    background-color: var(--dark_gray);
+    color: var(--fg);
+}
+
+/* Dashboard */
+
+.view_list button {
+    background-color: var(--bg);
+    border: none;
+    border-radius: 10px;
+}
+
+.view_list {
+    display: flex;
+    flex-direction: row;
+}
+
+.view_list .list-title {
+    font-family: "Kaisei Takumin";
+    font-size: 17px;
+    font-weight: 600;
+    text-align: start;
+    width: 436px;
+    height: 35px;
+    margin: 5px;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.view_list .delete-list {
+    font-family: "Kaisei Takumin";
+    font-size: 20px;
+    font-weight: 600;
+    color: #fb786e;
+    text-align: start;
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+    padding-left: 9px;
+    padding-top: 3px;
+}
+
+.view_list .list-title:hover {
+    background-color: var(--dark_gray);
+    cursor: pointer;
+}
+
+.view_list .delete-list:hover {
+    background-color: #fb786e;
+    color: var(--dark_gray);
+    cursor: pointer;
+}
+
+.copy-section {
+   display: flex; 
+   flex-direction: column;
+}
+
+.copy-section input {
+    height: 30px;
+    margin: 10px;
+    border: none;
+    background:none;
+}
+
+.copy-section button {
+    width: 350px;
+    height: 40px;
+    background-color: var(--bg);
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    margin-top: 50px;
+}
+
+.copy-section button:hover {
+    background-color: var(--dark_gray);
+    color: var(--fg);
+}
